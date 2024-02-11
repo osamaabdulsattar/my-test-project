@@ -24,4 +24,7 @@ public class UsersDatabaseConnection {
 
     public void findById() {
     }
+
+    public void findByUsername() {
+    }
 }
