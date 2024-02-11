@@ -18,10 +18,25 @@ public class UsersDatabaseConnection {
         System.out.println("Updating user in the users database");
     }
 
+    public void registerUser() {
+        int id = findById();
+        if(id != 0) {
+            System.out.println("User already exists in the users database");
+            return;
+        }
+        System.out.println("Registering user in the users database");
+    }
+
     public void deleteUser() {
+        int id = findById();
+        if(id == 0) {
+            System.out.println("User does not exist in the users database");
+            return;
+        }
         System.out.println("Deleting user from the users database");
     }
 
-    public void findById() {
+    public int findById() {
+        return 0;
     }
 }
