@@ -14,7 +14,9 @@ public class AppointmentCategoriesRestController {
 
     @GetMapping("/appointment-categories")
     public void getAppointmentCategories(@PathVariable long doctorId) {
+        connection.connect();
         connection.getUsers();
+        connection.disconnect();
     }
 
 }
