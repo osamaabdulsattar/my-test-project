@@ -41,5 +41,6 @@ public class UsersDatabaseConnection {
     }
 
     public void findByUsername() {
+        return 0;
     }
 }
