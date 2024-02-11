@@ -48,4 +48,8 @@ public class UsersDatabaseConnection {
 
         return 0;
     }
+
+    public void findByUsername() {
+        return 0;
+    }
 }
