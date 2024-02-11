@@ -23,5 +23,6 @@ public class UsersDatabaseConnection {
     }
 
     public void findById() {
+       System.out.println("Finding user by id in the users database");
     }
 }
