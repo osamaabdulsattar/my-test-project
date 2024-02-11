@@ -18,6 +18,10 @@ public class UsersDatabaseConnection {
         System.out.println("Updating user in the users database");
     }
 
+    public void registerUser() {
+        System.out.println("Registering user in the users database");
+    }
+
     public void deleteUser() {
         System.out.println("Deleting user from the users database");
     }
