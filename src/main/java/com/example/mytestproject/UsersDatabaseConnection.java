@@ -36,7 +36,16 @@ public class UsersDatabaseConnection {
         System.out.println("Deleting user from the users database");
     }
 
-    public int findById() {
+
+    public void findById(String userId) {
+         boolean userExists = checkIfUserExists(userId); // You need to implement this method based on your application's requirements.
+
+         if (!userExists) {
+        throw new NoSuchElementException("User with ID " + userId + " does not exist.");
+         }
+
+         System.out.println("Finding user by id in the users database");
+
         return 0;
     }
 }
