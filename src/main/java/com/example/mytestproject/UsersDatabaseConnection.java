@@ -20,11 +20,8 @@ public class UsersDatabaseConnection {
 
     public void registerUser() {
         int id = findById();
-        if(id != 0) {
-            System.out.println("User already exists in the users database");
-            return;
-        }
-        System.out.println("Registering user in the users database");
+        String message = getMessage(id);
+        System.out.println(message);
     }
 
     public void deleteUser() {
@@ -38,5 +35,12 @@ public class UsersDatabaseConnection {
 
     public int findById() {
         return 0;
+    }
+
+    public String getMessage(int id){
+        if(id != 0) {
+            return "User already exists in the users database";
+        }
+        return "Registering user in the users database";
     }
 }
